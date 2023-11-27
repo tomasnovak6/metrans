@@ -1,0 +1,29 @@
+{
+  "headline": "Metrans - testovací úkol",
+  "id": "ID",
+  "userId": "ID uživatele",
+  "usersIds": {
+    "tester": "Tester",
+    "admin": "Admin",
+    "unknownUser": "Neznámý uživatel"
+  },
+  "title": "Titulek",
+  "update": "Upravit",
+  "delete": "Smazat",
+  "addPost": "Přidat záznam",
+  "updatePost": "Upravit záznam",
+  "selectUserId": "Vyberte ID uživatele",
+  "save": "Uložit",
+  "error": "Chyba",
+  "deleteConfirmation": {
+    "headline": "Potvrdit smazání",
+    "message": "Opravdu chcete smazat tento záznam?",
+    "success": "Záznam byl úspěšně smazán"
+  },
+  "insertConfirmation": {
+    "success": "Záznam byl úspěšně vložen"
+  },
+  "updateConfirmation": {
+    "success": "Záznam byl úspěšně editován"
+  }
+}

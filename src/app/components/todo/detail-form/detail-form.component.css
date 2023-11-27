@@ -1,0 +1,9 @@
+.row {
+  margin: 1rem 0;
+}
+.row > * {
+  display: block;
+  width: 100%;
+}
+
+/*# sourceMappingURL=detail-form.component.css.map */

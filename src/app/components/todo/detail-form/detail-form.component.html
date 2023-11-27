@@ -1,0 +1,21 @@
+<p-dialog [header]="headline | translate" [(visible)]="showDialog" [style]="{width: '30vw', height: '400px'}" (onHide)="onClose()">
+  <div class="container">
+  <form [formGroup]="postForm" (submit)="submitForm()">
+    <div class="row">
+      <label htmlFor="userId">{{ 'userId' | translate }}</label>
+      <select formControlName="userId" id="userId">
+        <option value="1">admin</option>
+        <option value="2">tester</option>
+      </select>
+    </div>
+    <div class="row">
+      <label htmlFor="title">{{ 'title' | translate }}</label>
+      <input type="text" pInputText formControlName="title" id="title" />
+    </div>
+    <div class="row">
+      <p-button type="submit" [label]="'save' | translate"></p-button>
+    </div>
+  </form>
+  </div>
+
+</p-dialog>
