@@ -3,4 +3,12 @@ h1 {
   padding: 2rem 0;
 }
 
+.row {
+  margin: 1rem 0;
+}
+.row > * {
+  display: block;
+  width: 100%;
+}
+
 /*# sourceMappingURL=app.component.css.map */

@@ -25,5 +25,9 @@
   },
   "updateConfirmation": {
     "success": "Záznam byl úspěšně editován"
-  }
+  },
+  "currentCount": "Aktuální počet",
+  "increment": "Zvýšit počet",
+  "decrement": "Snížit počet",
+  "reset": "Reset"
 }

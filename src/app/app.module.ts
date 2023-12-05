@@ -18,9 +18,13 @@ import {DropdownModule} from "primeng/dropdown";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StoreModule } from '@ngrx/store';
+import { CounterComponent } from './components/counter/counter.component';
+import { counterReducer } from './store/counter.reducer';
+import { LoginComponent } from './components/login/login.component';
 
 // AoT requires an exported function for factories
-export function HttpLoaderFactory(http: HttpClient) {
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
 }
 
@@ -30,7 +34,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     ListComponent,
     UserIdPipe,
-    DetailFormComponent
+    DetailFormComponent,
+    CounterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +61,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     DropdownModule,
     HttpClientModule,
     NgbModule,
+    StoreModule.forRoot({ count: counterReducer }),
   ],
   providers: [],
   bootstrap: [AppComponent]

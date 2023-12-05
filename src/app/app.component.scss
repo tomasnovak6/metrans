@@ -2,3 +2,13 @@ h1 {
   text-align: center;
   padding: 2rem 0;
 }
+
+.row {
+  margin: 1rem 0;
+
+  & > * {
+    display: block;
+    width: 100%;
+  }
+}
+

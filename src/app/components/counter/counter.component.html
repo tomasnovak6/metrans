@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <p-button [label]="'increment' | translate" (onClick)="increment()"></p-button>
+    </div>
+    <div class="col-4">
+      <p-button [label]="'decrement' | translate" (onClick)="decrement()"></p-button>
+    </div>
+    <div class="col-4">
+      <p-button [label]="'reset' | translate" (onClick)="reset()"></p-button>
+    </div>
+  </div>
+  <div class="row">
+    <span>{{ 'currentCount' | translate }}: {{ count$ | async }}</span>
+  </div>
+</div>
